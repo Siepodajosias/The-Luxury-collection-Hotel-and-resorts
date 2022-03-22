@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="luxury_hotel" match-name="authentification"/>
+  <table-filter match-catalog="luxury_hotel" match-name="avoir"/>
+  <table-filter match-catalog="luxury_hotel" match-name="chambres"/>
+  <table-filter match-catalog="luxury_hotel" match-name="clients"/>
+  <table-filter match-catalog="luxury_hotel" match-name="employes"/>
+  <table-filter match-catalog="luxury_hotel" match-name="factures"/>
+  <table-filter match-catalog="luxury_hotel" match-name="occupation"/>
+  <table-filter match-catalog="luxury_hotel" match-name="reservations"/>
+  <table-filter match-catalog="luxury_hotel" match-name="services"/>
+</hibernate-reverse-engineering>

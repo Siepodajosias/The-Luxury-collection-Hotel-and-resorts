@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="319.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fenetre3.Reservation2Controller">
+   <children>
+      <TableView fx:id="ListeFacture" layoutX="10.0" layoutY="10.0" prefHeight="319.0" prefWidth="565.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="IdReserv2" prefWidth="74.0" resizable="false" sortType="DESCENDING" text="ID" />
+            <TableColumn fx:id="DdReserv2" prefWidth="139.0" resizable="false" sortType="DESCENDING" text="Date Debut Reservation" />
+            <TableColumn fx:id="DfReserv2" prefWidth="155.0" resizable="false" sortType="DESCENDING" text="Date Fin Reservation" />
+            <TableColumn fx:id="DpReserv2" prefWidth="97.0" resizable="false" sortType="DESCENDING" text="Date Paiement" />
+            <TableColumn fx:id="NcReserv2" prefWidth="98.0" resizable="false" sortType="DESCENDING" text="Client" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

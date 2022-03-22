@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:id="rootpane" dividerPositions="0.5907046476761619" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="769.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainControleur">
+  <items>
+    <AnchorPane prefHeight="593.0" prefWidth="454.0" style="-fx-background-color: #3b3759;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="552.0" prefWidth="372.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="202.0" styleClass="text1" text="Bienvenue" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="68.0" prefWidth="407.0" styleClass="text1" text="A Luxury Collection Hotel and Resort" textFill="#ebe7e7">
+                     <font>
+                        <Font name="System Bold" size="68.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="28.0" prefWidth="407.0" text="Numéro:+225 0750203040" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="36.0" prefWidth="407.0" text="Email:Hôtel_Luxury@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="407.0" text="Adresse:Abidjan Riviera 4 rue ADO 128" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="552.0" prefWidth="186.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="9.0" prefHeight="552.0" prefWidth="332.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="56.0" prefWidth="248.0" styleClass="text2" text="Veillez Vous Authentifier">
+                     <font>
+                        <Font name="System Bold" size="56.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets bottom="30.0" left="10.0" />
+                     </opaqueInsets>
+                  </Label>
+                  <JFXTextField fx:id="IdNom" labelFloat="true" prefHeight="30.0" prefWidth="229.0" promptText="Nom d'Utilisateur">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="30.0" right="30.0" top="30.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </opaqueInsets>
+                  </JFXTextField>
+                  <JFXTextField fx:id="IdProfession" labelFloat="true" layoutX="40.0" layoutY="235.0" prefHeight="30.0" prefWidth="229.0" promptText="Poste de Travail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="IdPwd" labelFloat="true" promptText="Mot de Passe">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="Idconnection" onAction="#OnConnecter" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #3b3759;" styleClass="text3" text="Se Connecter" textFill="WHITE" />
+                        <JFXButton fx:id="IdInscription" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" onAction="#OnInscription" prefHeight="47.0" prefWidth="115.0" style="-fx-background-color: #3b3759;" styleClass="text3" text="S'inscrire" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="#fcf8f8" glyphName="ARROW_RIGHT" textAlignment="CENTER" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

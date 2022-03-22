@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="ListeEmployes.ListeEmployeController">
+   <children>
+      <TableView fx:id="ListeEmployes" prefHeight="424.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="IdEmploye" prefWidth="75.0" sortType="DESCENDING" text="ID" />
+          <TableColumn fx:id="NomEmploye" prefWidth="100.0" sortType="DESCENDING" text="Nom" />
+            <TableColumn fx:id="PrenomEmploye" prefWidth="84.0" sortType="DESCENDING" text="Prenom" />
+            <TableColumn fx:id="AgeEmploye" prefWidth="84.0" sortType="DESCENDING" text="Age" />
+            <TableColumn fx:id="GEmploye" prefWidth="68.0" sortType="DESCENDING" text="Genre" />
+            <TableColumn fx:id="villeEmploye" prefWidth="103.0" sortType="DESCENDING" text="Ville" />
+            <TableColumn fx:id="NumEmploye" prefWidth="103.0" sortType="DESCENDING" text="Numéro" />
+            <TableColumn fx:id="serviceEmploye" prefWidth="103.0" sortType="DESCENDING" text="Service" />
+             <TableColumn fx:id="IdButton" prefWidth="114.0" sortType="DESCENDING" text="Action" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

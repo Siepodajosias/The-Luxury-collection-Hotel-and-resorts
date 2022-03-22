@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="472.0" prefWidth="661.0" style="-fx-background-color: #3b3759;" stylesheets="@Mreservation.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mreservation.MreservationController">
+   <children>
+      <VBox layoutX="-73.0" layoutY="37.0" prefHeight="521.0" prefWidth="739.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="30.0" layoutY="30.0" prefHeight="206.0" prefWidth="631.0" style="-fx-background-color: #CACBD5;">
+                     <children>
+                        <Label fx:id="IDclD" prefHeight="25.0" prefWidth="166.0" text="Nom Client">
+                           <HBox.margin>
+                              <Insets right="96.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="IDchD" layoutX="352.0" layoutY="40.0" prefHeight="25.0" prefWidth="150.0" text="Chambre">
+                           <HBox.margin>
+                              <Insets right="90.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="IDserD" layoutX="366.0" layoutY="40.0" prefHeight="25.0" prefWidth="143.0" text="Service">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="IDreserv1" layoutX="497.0" layoutY="28.0" prefHeight="25.0" prefWidth="143.0" text="N°Reservation">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="206.0" prefWidth="631.0" style="-fx-background-color: #CACBD5;">
+                     <children>
+                        <ComboBox fx:id="IDClient" onAction="#LoadClient" prefHeight="25.0" prefWidth="168.0" promptText="Client ID" />
+                        <ComboBox fx:id="IDchambre" layoutX="140.0" layoutY="90.0" onAction="#loadchambre" prefHeight="25.0" prefWidth="179.0" promptText="Chambre ID" />
+                        <ComboBox fx:id="IDservices" layoutX="401.0" layoutY="90.0" onAction="#loadservice" prefHeight="25.0" prefWidth="163.0" promptText="Service ID" />
+                        <ComboBox fx:id="IDreservation" layoutX="86.0" layoutY="88.0" onAction="#loadreservation" prefHeight="25.0" prefWidth="142.0" promptText="Reservation ID" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="210.0" prefWidth="631.0" style="-fx-background-color: #CACBD5;">
+               <children>
+                  <JFXDatePicker fx:id="IddateD" defaultColor="#3b3759" prefHeight="28.0" prefWidth="208.0" promptText="Debut de Reservation">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXDatePicker>
+                  <JFXDatePicker fx:id="IDdateFin" defaultColor="#3b3759" prefHeight="28.0" prefWidth="200.0" promptText="Fin De Reservation" />
+                  <JFXDatePicker fx:id="IDdatePaye" defaultColor="#3b3759" promptText="Date de Paiement" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="106.0" prefWidth="621.0">
+               <children>
+                  <JFXButton fx:id="IdEnregistrer" buttonType="RAISED" onAction="#OnEnregistrer" prefHeight="49.0" prefWidth="149.0" text="Enregistrer" textFill="#f5f5f8">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="MAIL_FORWARD" size="25" />
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

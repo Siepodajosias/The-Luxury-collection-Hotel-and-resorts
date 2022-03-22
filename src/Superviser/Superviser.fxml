@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="912.0" stylesheets="@Superviser.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Superviser.SuperviserController">
+   <children>
+      <BorderPane prefHeight="586.0" prefWidth="977.0" stylesheets="@Superviser.css">
+         <right>
+            <VBox prefHeight="540.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="idAEmpoye" contentDisplay="TOP" mnemonicParsing="false" onAction="#OnEmploye" prefHeight="200.0" prefWidth="200.0" styleClass="text2" text="Ajouter Un Employe" />
+                  <Button fx:id="idAchambre" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnAchambre" prefHeight="200.0" prefWidth="200.0" styleClass="text2" text="Ajouter Une Chambre" />
+                  <Button fx:id="IdAService" contentDisplay="TOP" layoutX="10.0" layoutY="449.0" mnemonicParsing="false" onAction="#OnAService" prefHeight="200.0" prefWidth="200.0" styleClass="text2" text="Ajouter Un Service" />
+                  <Button fx:id="IdListE" contentDisplay="TOP" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" onAction="#OnListeEmplyoe" prefHeight="200.0" prefWidth="200.0" styleClass="text2" text="Liste Des employes" />
+                  <Button fx:id="IdVChambre" contentDisplay="TOP" layoutX="10.0" layoutY="176.0" mnemonicParsing="false" onAction="#OnChambre" prefHeight="200.0" prefWidth="200.0" styleClass="text2" text="Voir Les Chambres" />
+                  <Button fx:id="idAclient" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Onclient" prefHeight="200.0" prefWidth="200.0" styleClass="text2" text="Enregistrer Un Client" />
+                  <Button fx:id="IdFacture" contentDisplay="TOP" layoutX="10.0" layoutY="478.0" mnemonicParsing="false" onAction="#OnFacture" prefHeight="200.0" prefWidth="200.0" styleClass="text2" text="Facture" />
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <TabPane prefHeight="563.0" prefWidth="712.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Enregistrer Une reservation">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="493.0" prefWidth="712.0" style="-fx-background-color: #3b3759;">
+                           <children>
+                              <VBox layoutX="-83.0" layoutY="27.0" prefHeight="484.0" prefWidth="812.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <HBox alignment="CENTER" layoutX="30.0" layoutY="30.0" prefHeight="206.0" prefWidth="631.0" style="-fx-background-color: #CACBD5;">
+                                             <children>
+                                                <Label fx:id="IDclD" prefHeight="25.0" prefWidth="166.0" text="Nom Client">
+                                                   <HBox.margin>
+                                                      <Insets right="96.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="IDchD" layoutX="352.0" layoutY="40.0" prefHeight="25.0" prefWidth="150.0" text="Chambre">
+                                                   <HBox.margin>
+                                                      <Insets right="90.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="IDserD" layoutX="366.0" layoutY="40.0" prefHeight="25.0" prefWidth="143.0" text="Service">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="20.0" right="20.0" top="15.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="206.0" prefWidth="631.0" style="-fx-background-color: #CACBD5;">
+                                             <children>
+                                                <ComboBox fx:id="IDClient" onAction="#LoadClient" prefHeight="25.0" prefWidth="205.0" promptText="Client ID" />
+                                                <ComboBox fx:id="IDchambre" onAction="#loadchambre" prefHeight="25.0" prefWidth="179.0" promptText="Chambre ID" />
+                                                <ComboBox fx:id="IDservices" onAction="#loadservice" prefHeight="25.0" prefWidth="163.0" promptText="Service ID" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="210.0" prefWidth="631.0" style="-fx-background-color: #CACBD5;">
+                                       <children>
+                                          <JFXDatePicker fx:id="IddateD" defaultColor="#3b3759" promptText="Debut de Reservation">
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                          </JFXDatePicker>
+                                          <JFXDatePicker fx:id="IDdateFin" defaultColor="#3b3759" promptText="Fin De Reservation" />
+                                          <JFXDatePicker fx:id="IDdatePaye" defaultColor="#3b3759" promptText="Date de Paiement" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="106.0" prefWidth="621.0">
+                                       <children>
+                                          <JFXButton fx:id="IdEnregistrer" buttonType="RAISED" onAction="#OnEnregistrer" prefHeight="47.0" prefWidth="149.0" text="Enregistrer" textFill="#38335e">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#3b3759" glyphName="MAIL_FORWARD" size="25" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton buttonType="RAISED" onAction="#OnActualiser" prefHeight="49.0" prefWidth="154.0" text="Actualiser" textFill="#38335e">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#3b3759" glyphName="REPEAT" size="25" />
+                                             </graphic>
+                                             <opaqueInsets>
+                                                <Insets left="20.0" />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Reservation en cour..">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #3b3759;">
+                           <children>
+                              <BorderPane layoutX="184.0" layoutY="76.0" prefHeight="427.0" prefWidth="621.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <JFXTextField fx:id="IdReserCour" blendMode="ADD" focusColor="WHITE" labelFloat="true" onAction="#loadReservation" prefHeight="25.0" prefWidth="524.0" promptText="Reservation Id" unFocusColor="WHITE" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                                       </BorderPane.margin>
+                                    </JFXTextField>
+                                 </top>
+                                 <center>
+                                    <ListView fx:id="ListeReservation" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                                       </padding>
+                                    </ListView>
+                                 </center>
+                                 <bottom>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton fx:id="IdRecherche" buttonType="RAISED" layoutX="255.0" layoutY="20.0" onAction="#loadReservation" prefHeight="60.0" prefWidth="131.0" text="Recherche" />
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

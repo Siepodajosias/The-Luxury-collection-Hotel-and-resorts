@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="326.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VCHdisponible.VCHdisponibleController">
+   <children>
+      <TableView fx:id="IDlisteChambre" prefHeight="326.0" prefWidth="805.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="IdNum" prefWidth="58.0" resizable="false" sortType="DESCENDING" text="Numéro" />
+          <TableColumn fx:id="IDprix" prefWidth="134.0" resizable="false" sortType="DESCENDING" text="Prix" />
+            <TableColumn fx:id="IDdesc" prefWidth="145.0" resizable="false" sortType="DESCENDING" text="Description" />
+            <TableColumn fx:id="IDtele" prefWidth="134.0" resizable="false" sortType="DESCENDING" text="Téléphone" />
+            <TableColumn fx:id="IDoccp" prefWidth="66.0" resizable="false" sortType="DESCENDING" text="Occuper" />
+            <TableColumn fx:id="idReserv" prefWidth="109.0" resizable="false" sortType="DESCENDING" text="Reservation" />
+            <TableColumn fx:id="IDserv" prefWidth="88.0" resizable="false" sortType="DESCENDING" text="Service" />
+            <TableColumn fx:id="IdButton" prefWidth="70.0" resizable="false" sortType="DESCENDING" text="Action" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

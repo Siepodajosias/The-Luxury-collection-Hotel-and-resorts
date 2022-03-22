@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@font-face{
+	font-family:Roboto;
+	src:url("../Font/StyleScript-Regular.ttf");
+}
+
+.text1{
+	-fx-font:35px "Style Script";
+}
+
+.text2{
+	-fx-font:30px "Style Script";
+}
+
+.text3{
+	-fx-font:18px "Style Script";
+}

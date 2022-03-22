@@ -1,0 +1,22 @@
+@font-face{
+	font-family:StyleScript;
+	src:url("../Font/StyleScript-Regular.ttf");
+}
+
+.text2{
+	-fx-font:16px "Style Script";
+}
+
+.jfx-button{
+	-fx-background-color:  #ffffff;
+	-fx-text-fill: #3b3759;
+}
+
+.jfx-button:hover{
+	-fx-cursor:hand;
+	-fx-background-color: #013392;
+}
+
+.button:hover{
+	-fx-cursor:hand;
+}

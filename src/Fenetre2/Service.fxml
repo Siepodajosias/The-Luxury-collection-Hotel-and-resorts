@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="348.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fenetre2.Service2Controller">
+   <children>
+      <TableView fx:id="ListeServ" layoutX="10.0" layoutY="10.0" prefHeight="434.0" prefWidth="733.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="Idservice" prefWidth="92.0" sortType="DESCENDING" text="ID" />
+            <TableColumn fx:id="IdDescp" prefWidth="200.0" sortType="DESCENDING" text="Détail" />
+            <TableColumn fx:id="IdDDserv" prefWidth="196.0" sortType="DESCENDING" text="Debut de service" />
+             <TableColumn fx:id="IdDFserv" prefWidth="196.0" sortType="DESCENDING" text="Fin de service" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

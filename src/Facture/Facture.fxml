@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="348.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Facture.FactureController">
+   <children>
+      <TableView fx:id="ListeFacture" layoutX="10.0" layoutY="10.0" prefHeight="434.0" prefWidth="733.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="IdFacture" prefWidth="92.0" sortType="DESCENDING" text="ID" />
+            <TableColumn fx:id="DdFacture" prefWidth="200.0" sortType="DESCENDING" text="Date" />
+            <TableColumn fx:id="MontantFacture" prefWidth="196.0" sortType="DESCENDING" text="Montant" />
+            <TableColumn fx:id="IDreservation" prefWidth="112.0" sortType="DESCENDING" text="N°Reservation" />
+            <TableColumn fx:id="IDClient" prefWidth="153.0" sortType="DESCENDING" text="Client" />
+            <TableColumn fx:id="IdButton" prefWidth="114.0" sortType="DESCENDING" text="Action" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
