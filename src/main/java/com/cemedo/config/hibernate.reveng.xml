@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="adresse"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="antecedant"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="appl"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="assurance"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="chat"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="consultation"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="dossier"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="dossiers_has_medecins"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="examen"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="facturepatient"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="famille"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="infirmier"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="informaticien"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="livraison"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="medecin"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="medicament"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="medicament2"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="medicaments_has_ordonnances"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="ordonnance"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="ordonnances_has_examens"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="patient"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="pharmacien"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="rapport"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="reception"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="rendezvous"/>
+</hibernate-reverse-engineering>
