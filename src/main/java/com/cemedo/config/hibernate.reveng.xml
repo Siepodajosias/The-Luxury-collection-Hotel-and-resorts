@@ -27,4 +27,5 @@
   <table-filter match-catalog="heroku_88ae11bd39df693" match-name="rapport"/>
   <table-filter match-catalog="heroku_88ae11bd39df693" match-name="reception"/>
   <table-filter match-catalog="heroku_88ae11bd39df693" match-name="rendezvous"/>
+  <table-filter match-catalog="heroku_88ae11bd39df693" match-name="comptable"/>
 </hibernate-reverse-engineering>

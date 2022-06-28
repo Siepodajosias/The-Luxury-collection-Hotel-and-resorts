@@ -14,13 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cemedo.data.Patient;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @CrossOrigin("*")
 @RestController
+@Api("API  Rest pour les opérations CRUD sur les patients")
 public class PatientController {
 	@Autowired
  private IPatient patient;
  
-	
+@ApiOperation(value = "Récupere la liste des patients")
  @GetMapping(value = "/listeP")
  public List<Patient> getListe(){
 	  return patient.findAll();
