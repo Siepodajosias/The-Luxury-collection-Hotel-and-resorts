@@ -45,7 +45,7 @@ public class InfirmierController {
 	}
  
 @ApiOperation(value = "Mise à jour des information d'un medecin")
-	@PutMapping(value = "/listeM/{id}")
+	@PutMapping(value = "/listeInfir/{id}")
 	public Infirmier update(@PathVariable(name="id") Integer id,@RequestBody Infirmier p) {
 		p.setIdInfirmier(id);
 	   return infirmier.save(p);
